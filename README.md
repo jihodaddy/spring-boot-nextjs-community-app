@@ -1,0 +1,1 @@
+# spring-boot-nextjs-community-app
