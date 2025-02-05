@@ -37,6 +37,7 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	implementation 'com.slack.api:slack-api-client:1.39.3'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
 	// Lombok
 	compileOnly 'org.projectlombok:lombok'

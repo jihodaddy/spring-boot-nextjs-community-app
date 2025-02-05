@@ -1,4 +1,4 @@
-package com.jihodaddy.community.util.response;
+package com.jihodaddy.community.common.response;
 
 import lombok.Getter;
 
@@ -27,15 +27,4 @@ public class ApiResponse<T> {
     return new ApiResponse<>(SUCCESS_STATUS, null, message);
   }
 
-  public static <T> ApiResponse<T> createError(String code, String message) {
-    return new ApiResponse<>(code, null, message);
-  }
-
-  public static <T> ApiResponse<T> createClientError(String message) {
-    return new ApiResponse<>(FAIL_STATUS, null, message);
-  }
-
-  public static <T> ApiResponse<T> createServerError(String message) {
-    return new ApiResponse<>(FAIL_STATUS, null, message);
-  }
 }

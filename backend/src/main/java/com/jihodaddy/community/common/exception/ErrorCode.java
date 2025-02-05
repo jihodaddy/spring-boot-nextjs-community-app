@@ -1,4 +1,4 @@
-package com.jihodaddy.community.exception;
+package com.jihodaddy.community.common.exception;
 
 import lombok.Getter;
 
