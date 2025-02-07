@@ -19,6 +19,10 @@ public class ApiResponse<T> {
     this.message = message;
   }
 
+  public static <T> ApiResponse<T> createSuccess(T data) {
+    return new ApiResponse<>(SUCCESS_STATUS, data, null);
+  }
+
   public static <T> ApiResponse<T> createSuccess(T data, String message) {
     return new ApiResponse<>(SUCCESS_STATUS, data, message);
   }
